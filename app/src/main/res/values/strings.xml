@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AMazeByCarolineF&amp;AparnaN</string>
+    <string name="robot">Choose a robot</string>
+    <string-array name="robot_array">
+        <item>Manual Driver</item>
+        <item>Wall Follower</item>
+        <item>Wizard</item>
+        <item>Pledge</item>
+    </string-array>
+    <string name="alg">Choose an algorithm</string>
+    <string-array name="alg">
+        <item>Default</item>
+        <item>Eller</item>
+        <item>Prim</item>
+    </string-array>
+</resources>

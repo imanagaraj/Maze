@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wm.cs.cs301.amazebycarolineaparna.ui.PlayActivity">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/energyBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="16dp" />
+
+    <ToggleButton
+        android:textOff="Solution"
+        android:textOn="Solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/showMaze"
+        android:layout_marginStart="32dp"
+        android:id="@+id/showSolution" />
+
+    <ToggleButton
+        android:textOff="Maze"
+        android:textOn="Solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showMaze"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:textOff="Walls"
+        android:textOn="Solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/showSolution"
+        android:layout_alignEnd="@+id/energyBar"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/showWall" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/start"
+
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/start"
+        android:layout_alignEnd="@+id/showSolution"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/pause"
+
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/leftarrow"
+        android:layout_above="@+id/energyBar"
+        android:layout_toEndOf="@+id/start"
+        android:layout_marginStart="12dp"
+        android:id="@+id/left"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/righarrow"
+        android:layout_alignBottom="@+id/left"
+        android:layout_toStartOf="@+id/energyBar"
+        android:layout_marginEnd="29dp"
+        android:id="@+id/right"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/uparrow"
+        android:layout_above="@+id/left"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/forward"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/downarrow"
+        android:layout_alignBottom="@+id/energyBar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/down"
+        android:visibility="invisible" />
+
+</RelativeLayout>
